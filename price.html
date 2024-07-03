@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow-x: auto; /* Horizontal scroll for small screens */
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    .table {
+        display: flex;
+        flex-direction: column;
+    }
+    .table-row {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #ddd;
+        padding: 12px 0;
+    }
+    .table-header {
+        background-color: #333;
+        color: white;
+    }
+    .table-cell {
+        flex: 1;
+        padding: 12px;
+        text-align: left;
+    }
+    .highlight {
+        background-color: #d6a151;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    /* Responsive adjustments */
+    @media only screen and (max-width: 768px) {
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+        .table-cell {
+            padding: 8px;
+            font-size: 12px; /* Decrease font size for smaller screens */
+        }
+    }
+</style>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/logo1.ico" type="image/icon type">
+  <title>MAESTRO DETAILING</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Početna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> O nama</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="work.html" > Naše usluge  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html"> Galerija </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="price.html">Cenovnik </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  
+  <div class="container">
+    <h1>Maestro Detailing Cenovnik</h1>
+
+    <div class="table">
+        <div class="table-row table-header">
+            <div class="table-cell">Usluga</div>
+            <div class="table-cell">Opis usluge</div>
+            <div class="table-cell">Cena</div>
+        </div>
+        
+        <div class="table-row">
+            <div class="table-cell">RESTART</div>
+            <div class="table-cell">
+                - DETALJNO DUBINSKO ČIŠĆENJE <br>
+                - PREMIUM DETAILING PRANJE
+            </div>
+            <div class="table-cell">60€</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">MAESTRO DETAILING LIGHT</div>
+            <div class="table-cell">
+                - DETALJNO RUČNO PRANJE FELNI<br>
+                - PREMIUM RUČNO PRANJE KAROSERIJE<br>
+                - DETALJNO DUBINSKO ČIŠĆENJE ENTERIJERA<br>
+                - POLIRANJE LIGHT JEDNOSLOJNO<br>
+                - ČIŠĆENJE MOTORNOG PROSTORA
+            </div>
+            <div class="table-cell">140€ - 180€</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">MAESTRO DETAILING PRO</div>
+            <div class="table-cell">
+                - DETALJNO RUČNO PRANJE FELNI<br>
+                - PREMIUM RUČNO PRANJE KAROSERIJE<br>
+                - DETALJNO DUBINSKO ČIŠĆENJE ENTERIJERA<br>
+                - PREMIUM POLIRANJE U 4 FAZE<br>
+                - ČIŠĆENJE MOTORNOG PROSTORA<br>
+                - FINIŠIRANJE
+            </div>
+            <div class="table-cell">250€ - 350€</div>
+        </div>
+        <div class="table-row highlight">Obavezno zakazivanje PON-SUB 09-16h</div>
+        <div class="table-row">
+            <div class="table-cell">OSNOVNO ČIŠĆENJE AUTOMOBILA</div>
+            <div class="table-cell">1. STANDARDNO PRANJE<br>2. PREMIUM DETAILING</div>
+            <div class="table-cell">1000din<br>2000din</div>
+        </div>
+        <div class="table-row highlight">DUBINSKO ČIŠĆENJE ENTERIJERA AUTOMOBILA</div>
+        <div class="table-row">
+            <div class="table-cell">Sedišta</div>
+            <div class="table-cell">1000din/kom</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Patosnice</div>
+            <div class="table-cell">300din/kom</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Ugaona garnitura</div>
+            <div class="table-cell">4000din - 6000din</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Trosed</div>
+            <div class="table-cell">2000din</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Dvosled</div>
+            <div class="table-cell">1400din</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Fotelja</div>
+            <div class="table-cell">800din</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Francuski ležaj</div>
+            <div class="table-cell">2000din - 3500din</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Stolice</div>
+            <div class="table-cell">200din - 500din/kom</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row highlight">MAESTRO DETAILING POLIRANJE VOZILA</div>
+        <div class="table-row">
+            <div class="table-cell">Light</div>
+            <div class="table-cell">140€ - 180€</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Pro</div>
+            <div class="table-cell">250€ - 350€</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Parcijalno Poliranje</div>
+            <div class="table-cell">50€ (haube, krova, vrata, krila)</div>
+            <div class="table-cell"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Faroa</div>
+            <div class="table-cell">2000din/komplet</div>
+            <div class="table-cell"></div>
+        </div>
+        
+    </div>
+
+</div>
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info_contact">
+            <h5 style="color:#d6a151 ;">
+              KAKO DO NAS
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="images/location-white.png" width="18px" alt="">
+              </div>
+              <p>
+                Nikole Kopernika 20,Niš
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/telephone-white.png" width="12px" alt="">
+              </div>
+              <p>
+                +381621898329
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/envelope-white.png" width="18px" alt="">
+              </div>
+              <p>
+                vujic.aleksa@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info_info">
+            <h5 style="color: #d6a151;">
+              MAESTRO DETAILING
+            </h5>
+            <p>
+              Posvećeni smo vašem automobilu do maksimuma. Koristeći vrhunsku opremu i preparate, možete biti sigurni da ste odabrali najbolji detailing servis.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="info_insta">
+            <h5 style="color: #d6a151;">
+             RADNO VREME
+            </h5>
+            <p>Ponedeljak-subota:09:00-17:00</p>
+            <p>Nedeljom ne radimo</p>
+           
+
+              
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2024 All Rights Reserved By
+      <a href=>BYTVOX</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+</body>
+
+</html>

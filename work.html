@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        
+        
+        
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+    .service {
+        background: #d6a151;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        transition: transform 0.3s, box-shadow 0.3s;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    .service h3 {
+        margin-top: 0;
+        font-weight: bold;
+        color:white;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .service-content {
+        display: none;
+        margin-top: 10px;
+    }
+    .service .price {
+        font-weight: bold;
+        color: #555;
+    }
+    .service .note {
+        color: #999;
+        font-size: 14px;
+    }
+    .arrow {
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        transition: transform 0.3s;
+    }
+    .arrow.up {
+        transform: rotate(-135deg);
+    }
+</style>
+<script>
+    function toggleContent(id, arrowId) {
+        var content = document.getElementById(id);
+        var arrow = document.getElementById(arrowId);
+        if (content.style.display === "none") {
+            content.style.display = "block";
+            arrow.classList.add("up");
+        } else {
+            content.style.display = "none";
+            arrow.classList.remove("up");
+        }
+    }
+</script>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/logo1.ico" type="image/icon type">
+  <title>MAESTRO DETAILING</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Početna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> O nama</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="work.html"> Naše usluge </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html"> Galerija </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="price.html">Cenovnik </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  
+  <div class="container">
+    <h2>Naše usluge - Maestro Detailing</h2>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content1', 'arrow1')">STANDARDNO PRANJE <i id="arrow1" class="arrow"></i></h3>
+        <div id="content1" class="service-content">
+            <p>Tu smo da umesto vas operemo vaš automobil. Usisavanje enterijera, brisanje plastičnih delova, bezkontaktno spoljašnje pranje, tretman pneumatika, brisanje stakala.</p>
+            <p class="price">Trajanje: 1h = 1000din</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content2', 'arrow2')">PREMIUM PRANJE <i id="arrow2" class="arrow"></i></h3>
+        <div id="content2" class="service-content">
+            <p>Ovo je već profesionalna usluga, gde sa puno pažnje pristupamo vašem automobilu. Dobijate savršeno čiste plastične delove, do najsitnijih detalja. Ručno pranje karoserije, felgi, gepeka. Paročišćenje svih uvala i pregradica, stakala, instrument table, oko menjača itd.</p>
+            <p class="price">Trajanje: 2h = 2000din</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content3', 'arrow3')">DUBINSKO MAESTRO DETAILING <i id="arrow3" class="arrow"></i></h3>
+        <div id="content3" class="service-content">
+            <p>Premium pranje + Dubinsko pranje sedišta, poda, gepeka, tapacira, patosnica. (Nebo po potrebi)</p>
+            <p class="price">Trajanje: 24h = 7000din (60e)</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content4', 'arrow4')">POLIRANJE <i id="arrow4" class="arrow"></i></h3>
+        <div id="content4" class="service-content">
+            <p>Farova: 2000din</p>
+            <p>Automobil:</p>
+            <ul>
+                <li>PREMIUM PRANJE</li>
+                <li>DUBINSKO MAESTRO DETAILING</li>
+                <li>PRANJE MOTORNOG PROSTORA</li>
+                <li>POLIRANJE</li>
+                <li>Light (bela boja, noviji automobili, jednoslojno poliranje): 100-150e</li>
+                <li>Hard (teža oštećenja, crna boja, troslojno poliranje): 250-350e</li>
+            </ul>
+            <p class="price">Cene su informativnog karaktera. Najbolju cenu dobijate kada dovezete auto kod nas, i mi vam predložimo koji paket bi bio idealan za vaš auto i vaš džep. Cene takođe variraju i od veličine auta.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content5', 'arrow5')">KERAMIČKA ZAŠTITA <i id="arrow5" class="arrow"></i></h3>
+        <div id="content5" class="service-content">
+            <p>U zavisnosti koliko dugo želite da zaštita traje: 50-100e</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content6', 'arrow6')">DETALJNO ČIŠĆENJE - DUBINSKO PRANJE <i id="arrow6" class="arrow"></i></h3>
+        <div id="content6" class="service-content">
+            <p>Čišćenje enterijera je proces detaljnog (dubinskog) pranja unutrašnjosti vozila u okviru kog se detaljno čiste sedišta, vrata, patosnice, prostor gepeka, poda itd. Potrebno nam je 24h da temeljno i kvalitetno osušimo i operemo vašeg ljubimca.</p>
+            <p class="price">Trajanje: 24h</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content7', 'arrow7')">OSNOVNO ČIŠĆENJE AUTOMOBILA <i id="arrow7" class="arrow"></i></h3>
+        <div id="content7" class="service-content">
+            <p>Standardno pranje podrazumeva usisavanje vozila, brisanje plastičnih pragova, brisanje stakala, kao i bezkontaktno spoljašnje pranje. Brisanje uvala oko vrata kao i mazanje guma.</p>
+            <p class="price">Trajanje: 1h = 1000-1200din</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <h3 onclick="toggleContent('content8', 'arrow8')">PREMIUM DETAILING PRANJE <i id="arrow8" class="arrow"></i></h3>
+        <div id="content8" class="service-content">
+            <p>Podrazumeva detaljno usisavanje poda, prostora gepeka, detaljno čišćenje i brisanje plastičnih delova i stakala. Paročišćenje i dezinfekcija ventilacionih otvora, prostora oko menjača itd. Detaljno ručno pranje karoserije, čišćenje ostataka od insekata, uvala oko vrata, rezervoara. Ispiranje i sušenje mikrofiber krpama. Antistatik tretman instrument table i svih gumenih površina.</p>
+            <p class="price">Trajanje: 2h = 2000-2400din</p>
+        </div>
+    </div>
+</div>
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info_contact">
+            <h5 style="color:#d6a151 ;">
+              KAKO DO NAS
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="images/location-white.png" width="18px" alt="">
+              </div>
+              <p>
+                Nikole Kopernika 20,Niš
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/telephone-white.png" width="12px" alt="">
+              </div>
+              <p>
+                +381621898329
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="images/envelope-white.png" width="18px" alt="">
+              </div>
+              <p>
+                vujic.aleksa@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info_info">
+            <h5 style="color: #d6a151;">
+              MAESTRO DETAILING
+            </h5>
+            <p>
+              Posvećeni smo vašem automobilu do maksimuma. Koristeći vrhunsku opremu i preparate, možete biti sigurni da ste odabrali najbolji detailing servis.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="info_insta">
+            <h5 style="color: #d6a151;">
+             RADNO VREME
+            </h5>
+            <p>Ponedeljak-subota:09:00-17:00</p>
+            <p>Nedeljom ne radimo</p>
+           
+
+              
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2024 All Rights Reserved By
+      <a href="https://html.design/">BYTVOX</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+</body>
+
+</html>
